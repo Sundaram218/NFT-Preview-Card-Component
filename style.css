@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container .main-image {
+  position: relative;
+}
+
+.container .main-image div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transform: transition 0.5s ease-in-out;
+}
+
+.main-image:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .main-image div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--main-bg);
+  color: hsl(0, 0%, 100%, 60%);
+  padding: 1.25rem;
+}
+
+h2 {
+  color: var(--White);
+  margin: 1rem 0.5rem 0.5rem 0;
+}
+
+h2:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.container {
+  padding: 1.25rem;
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin: 1rem 0.5rem 0.5rem 0rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+ul li:first-child {
+  color: var(--Cyan);
+}
+
+.eth-img {
+  position: relative;
+  top: 2px;
+  padding-right: 5px;
+}
+
+.text {
+  position: relative;
+  top: 2px;
+  padding-right: 1px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 2rem;
+}
+
+.avatar img {
+  margin-right: 1rem;
+  border: 2px solid var(--White);
+  border-radius: 2rem;
+}
+
+.name {
+  color: var(--White);
+}
+
+.name:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
